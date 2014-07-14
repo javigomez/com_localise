@@ -24,7 +24,7 @@
 
 	<!-- Load extension version property in XML file -->
 	<xmlproperty
-			file="${project.dir}/localise.xml"
+			file="${project.basedir}/../localise.xml"
 			prefix="extensionDetails"
 			keepRoot="false" />
 	<property
@@ -36,6 +36,7 @@
 	<!-- Create packages folder                        -->
 	<!-- ============================================  -->
 	<target name="prepare">
+		<echo>project dir: ${project.dir}</echo>
 		<!-- Check if the package already exists. If yes, remove it to generate a new one -->
 		<if>
 			<available file="${package.dir}/${extension}-${version}.zip"
