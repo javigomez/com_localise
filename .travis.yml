@@ -10,5 +10,5 @@ before_script:
   - phpenv rehash
 
 script:
-  - find ./administrator -name '*.php' -exec php -l {} \;
+  - php .travis/phppec.php administrator/
   - phing -f .travis.xml
