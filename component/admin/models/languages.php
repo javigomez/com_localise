@@ -175,7 +175,7 @@ class LocaliseModelLanguages extends JModelList
 
 				if (LocaliseHelper::hasInstallation())
 				{
-					$clients[] = 'installation';
+					$clients[] = 'Installation';
 				}
 			}
 			else

@@ -19,17 +19,17 @@ modules:
         - AcceptanceHelper
     config:
         WebDriver:
-            url: 'http://localhost/com_localise_joomla_cms'     # the url that points to the joomla Installation. For example: http://localhost/tests/system/joomla-cms
+            url: 'http://localhost/repos/localise/tests/system/joomla-cms/'     # the url that points to the joomla Installation. For example: http://localhost/tests/system/joomla-cms
             browser: 'firefox'
             window_size: 1024x768
             capabilities:
               unexpectedAlertBehaviour: 'accept'
         AcceptanceHelper:
-            username: 'admin'                                  # UserName for the Administrator
-            password: 'admin'                                    # Password for the Administrator
+            username: 'puneet'                                  # UserName for the Administrator
+            password: '1234'                                    # Password for the Administrator
             db_host: 'localhost'                                # place where the Application is Hosted #server Address
             db_user: 'root'                                     # MySQL Server user ID, usually root
-            db_pass: '1234'                                     # MySQL Server password, usually empty
+            db_pass: ''                                     # MySQL Server password, usually empty
             db_name: 'com_localise'                             # DB Name, at the Server
             db_type: 'MySQLi'                                   # DB Type, Mostly MySQLi
             db_prefix: 'jos_'                                   # DB Prefix for tables
@@ -38,5 +38,5 @@ modules:
             site_name: 'Joomla'                                 # Name of the Site
             admin_email: 'admin@mydomain.com'                   # email Id of the Admin
             language: 'English (United Kingdom)'                # Language in which you want the Application to be Installed
-            folder: '/home/puneet/Projects/com_localise/'       # Path to the Extension to be installed via Install from folder
+            folder: '/Applications/XAMPP/xamppfiles/htdocs/repos/localise'       # Path to the Extension to be installed via Install from folder
             host: 'http://localhost/com_localise_joomla_cms'    # @todo probably we don't need this

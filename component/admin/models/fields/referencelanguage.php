@@ -14,7 +14,7 @@ jimport('joomla.filesystem.folder');
 include_once JPATH_ADMINISTRATOR . '/components/com_localise/helpers/defines.php';
 
 /**
- * Renders a list of all possible languages (they must have a site, language and installation part)
+ * Renders a list of all possible languages (they must have a site, language and Installation part)
  * Use instead of the joomla library languages element, which only lists languages for one client
  *
  * @package     Extensions.Components

@@ -255,8 +255,8 @@ class LocaliseModelLanguage extends JModelAdmin
 			$text .= "\t" . '<creationDate>' . htmlspecialchars($data['creationDate'], ENT_COMPAT, 'UTF-8') . '</creationDate>' . "\n";
 			$text .= "\t" . '<author>' . htmlspecialchars($data['author'], ENT_COMPAT, 'UTF-8') . '</author>' . "\n";
 
-			// AuthorEmail, authorURL are not used in the installation
-			if ($client != "installation")
+			// AuthorEmail, authorURL are not used in the Installation
+			if ($client != "Installation")
 			{
 				$text .= "\t" . '<authorEmail>' . htmlspecialchars($data['authorEmail'], ENT_COMPAT, 'UTF-8') . '</authorEmail>' . "\n";
 				$text .= "\t" . '<authorUrl>' . htmlspecialchars($data['authorUrl'], ENT_COMPAT, 'UTF-8') . '</authorUrl>' . "\n";
@@ -264,8 +264,8 @@ class LocaliseModelLanguage extends JModelAdmin
 
 			$text .= "\t" . '<copyright>' . htmlspecialchars($data['joomlacopyright'], ENT_COMPAT, 'UTF-8') . '</copyright>' . "\n";
 
-			// Author copyright is not used in installation. It is present in CREDITS file
-			if ($client != "installation")
+			// Author copyright is not used in Installation. It is present in CREDITS file
+			if ($client != "Installation")
 			{
 				$data['copyright'] = explode("\n", $data['copyright']);
 
@@ -285,8 +285,8 @@ class LocaliseModelLanguage extends JModelAdmin
 			$text .= "\t\t" . '<tag>' . htmlspecialchars($data['tag'], ENT_COMPAT, 'UTF-8') . '</tag>' . "\n";
 			$text .= "\t\t" . '<rtl>' . htmlspecialchars($data['rtl'], ENT_COMPAT, 'UTF-8') . '</rtl>' . "\n";
 
-			// Locale, firstDay and weekEnd are not used in the installation
-			if ($client != "installation")
+			// Locale, firstDay and weekEnd are not used in the Installation
+			if ($client != "Installation")
 			{
 				$text .= "\t\t" . '<locale>' . htmlspecialchars($data['locale'], ENT_COMPAT, 'UTF-8') . '</locale>' . "\n";
 				$text .= "\t\t" . '<firstDay>' . htmlspecialchars($data['firstDay'], ENT_COMPAT, 'UTF-8') . '</firstDay>' . "\n";

@@ -65,8 +65,8 @@ class JFormFieldClient extends JFormField
 
 		if (LocaliseHelper::hasInstallation())
 		{
-			$options[] = JHtml::_('select.option', 'installation', JText::_('COM_LOCALISE_OPTION_CLIENT_INSTALLATION'),
-						array('option.attr' => 'attributes', 'attr' => 'class="iconlist-16-installation"')
+			$options[] = JHtml::_('select.option', 'Installation', JText::_('COM_LOCALISE_OPTION_CLIENT_INSTALLATION'),
+						array('option.attr' => 'attributes', 'attr' => 'class="iconlist-16-Installation"')
 						);
 		}
 

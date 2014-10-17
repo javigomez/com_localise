@@ -11,11 +11,10 @@ $scenario->group('Installation');
 
 // Load the Step Object Page
 $I = new AcceptanceTester\InstallJoomla3Steps($scenario);
-
 $I->wantTo('Execute Joomla Installation');
 $I->installJoomla3();
-$I = new AcceptanceTester\LoginSteps($scenario);
 
+$I = new AcceptanceTester\LoginSteps($scenario);
 $I->wantTo('Execute Log in at Joomla Administrator');
 $I->doAdminLogin();
 

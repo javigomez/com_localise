@@ -28,10 +28,10 @@ class LoginSteps extends \AcceptanceTester
 	{
 		$I = $this;
 		$this->acceptanceTester = $I;
-		$I->amOnPage(\LoginManagerPage::$URL);
+		$I->amOnPage(\joomla3\administrator\isis\LoginManagerPage::$URL);
 		$config = $I->getConfig();
-		$I->fillField(\LoginManagerPage::$userName, $config['username']);
-		$I->fillField(\LoginManagerPage::$password, $config['password']);
+		$I->fillField(\joomla3\administrator\isis\LoginManagerPage::$userName, $config['username']);
+		$I->fillField(\joomla3\administrator\isis\LoginManagerPage::$password, $config['password']);
 		$I->click('Log in');
 		$I->see('Control Panel');
 	}

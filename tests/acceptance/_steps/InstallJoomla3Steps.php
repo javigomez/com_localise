@@ -31,7 +31,7 @@ class InstallJoomla3Steps extends \AcceptanceTester
 	{
 		$I = $this;
 		$this->acceptanceTester = $I;
-		$I->amOnPage(\InstallJoomla3ManagerPage::$URL);
+		$I->amOnPage(\Joomla3\Installation\InstallPage::$URL);
 		$cfg = $I->getConfig();
 		$this->setField('Site Name', $cfg['site_name']);
 		$this->setField('Your Email', $cfg['admin_email']);
@@ -80,34 +80,34 @@ class InstallJoomla3Steps extends \AcceptanceTester
 		switch ($label)
 		{
 			case 'Host Name':
-				$id = \InstallJoomla3ManagerPage::$dbHost;
+				$id = \joomla3\installation\InstallPage::$dbHost;
 				break;
 			case 'Username':
-				$id = \InstallJoomla3ManagerPage::$dbUsername;
+				$id = \joomla3\installation\InstallPage::$dbUsername;
 				break;
 			case 'Password':
-				$id = \InstallJoomla3ManagerPage::$dbPassword;
+				$id = \joomla3\installation\InstallPage::$dbPassword;
 				break;
 			case 'Database Name':
-				$id = \InstallJoomla3ManagerPage::$dbName;
+				$id = \joomla3\installation\InstallPage::$dbName;
 				break;
 			case 'Table Prefix':
-				$id = \InstallJoomla3ManagerPage::$dbPrefix;
+				$id = \joomla3\installation\InstallPage::$dbPrefix;
 				break;
 			case 'Site Name':
-				$id = \InstallJoomla3ManagerPage::$siteName;
+				$id = \joomla3\installation\InstallPage::$siteName;
 				break;
 			case 'Your Email':
-				$id = \InstallJoomla3ManagerPage::$adminEmail;
+				$id = \joomla3\installation\InstallPage::$adminEmail;
 				break;
 			case 'Admin Username':
-				$id = \InstallJoomla3ManagerPage::$adminUser;
+				$id = \joomla3\installation\InstallPage::$adminUser;
 				break;
 			case 'Admin Password':
-				$id = \InstallJoomla3ManagerPage::$adminPassword;
+				$id = \joomla3\installation\InstallPage::$adminPassword;
 				break;
 			case 'Confirm Admin Password':
-				$id = \InstallJoomla3ManagerPage::$adminPasswordConfirm;
+				$id = \joomla3\installation\InstallPage::$adminPasswordConfirm;
 				break;
 		}
 
@@ -125,7 +125,8 @@ class InstallJoomla3Steps extends \AcceptanceTester
 	{
 		$I = $this->acceptanceTester;
 		$I->click("//div[@id='jform_db_type_chzn']/a/div/b");
-		$I->click("//div[@id='jform_db_type_chzn']//ul[@class='chzn-results']/li[contains(translate(.,'" . strtoupper($value) . "', '" . strtolower($value) . "'), '" . strtolower($value) . "')]");
+		$I->click("//div[@id='jform_db_type_chzn']//ul[@class='chzn-results']/li[contains(translate(.,'"
+			. strtoupper($value) . "', '" . strtolower($value) . "'), '" . strtolower($value) . "')]");
 	}
 
 	/**

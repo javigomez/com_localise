@@ -232,7 +232,7 @@ class LocaliseModelTranslations extends JModelList
 
 			if (empty($filter_client))
 			{
-				$clients = array('site', 'administrator', 'installation');
+				$clients = array('site', 'administrator', 'Installation');
 			}
 			else
 			{
@@ -364,7 +364,7 @@ class LocaliseModelTranslations extends JModelList
 
 		if (empty($filter_client))
 		{
-			$clients = array('site', 'administrator', 'installation');
+			$clients = array('site', 'administrator', 'Installation');
 		}
 		else
 		{
@@ -683,7 +683,7 @@ class LocaliseModelTranslations extends JModelList
 		$filter_origin  = $this->getState('filter.origin') ? $this->getState('filter.origin') : '.';
 		$filter_search  = $this->getState('filter.search') ? $this->getState('filter.search') : '.';
 
-		if ((empty($filter_client) || $filter_client != 'installation')
+		if ((empty($filter_client) || $filter_client != 'Installation')
 			&& (empty($filter_storage) || $filter_storage == 'global')
 			&& (empty($filter_type) || $filter_type == 'override')
 			&& preg_match("/$filter_origin/", '_override') && preg_match("/$filter_search/i", 'override'))

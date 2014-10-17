@@ -19,7 +19,7 @@ class InstallTest extends JoomlaWebdriverTestCase
         if ($this->cfg->doInstall == 'true')
         {
             $this->deleteConfigurationFile();
-            $url = $this->cfg->host . $this->cfg->path . 'installation/';
+            $url = $this->cfg->host . $this->cfg->path . 'Installation/';
             $installPage = $this->getPageObject('InstallationPage', true, $url);
             $installPage->install($this->cfg);
         }

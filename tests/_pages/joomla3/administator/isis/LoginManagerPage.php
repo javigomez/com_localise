@@ -1,4 +1,13 @@
 <?php
+/**
+ * @package     Joomla
+ * @subpackage  Page Class
+ * @copyright   Copyright (C) 2012 - 2014  All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+namespace joomla3\administrator\isis;
+
 
 /**
  * Class LoginManagerPage
@@ -7,7 +16,7 @@
  *
  * @since  1.0
  */
-class LoginManagerPage
+class LoginPage
 {
 	// Include url of current page
 	public static $URL = '/administrator/index.php';

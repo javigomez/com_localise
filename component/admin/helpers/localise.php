@@ -27,7 +27,7 @@ abstract class LocaliseHelper
 	 * @var    array
 	 * @since  4.0
 	 */
-	protected static $origins = array('site' => null, 'administrator' => null, 'installation' => null);
+	protected static $origins = array('site' => null, 'administrator' => null, 'Installation' => null);
 
 	/**
 	 * Array containing the package information
@@ -94,9 +94,9 @@ abstract class LocaliseHelper
 	}
 
 	/**
-	 * Check if the installation path exists
+	 * Check if the Installation path exists
 	 *
-	 * @return  boolean  True if the installation path exists
+	 * @return  boolean  True if the Installation path exists
 	 *
 	 * @since   4.0
 	 */
@@ -204,8 +204,8 @@ abstract class LocaliseHelper
 		$filter_client = $client ? $client : '.';
 		$scans         = array();
 
-		// Scan installation folders
-		if (preg_match("/$filter_client/", 'installation'))
+		// Scan Installation folders
+		if (preg_match("/$filter_client/", 'Installation'))
 		{
 			// TODO ;-)
 		}

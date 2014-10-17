@@ -113,7 +113,7 @@ class ExtensionManagerPage extends AdminManagerPage
 	}
 
 	/**
-	 * Run the build script to have the installation folder and ZIP
+	 * Run the build script to have the Installation folder and ZIP
 	 *
 	 * @param   Object  $cfg  Configuration Object
 	 *

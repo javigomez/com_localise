@@ -13,8 +13,8 @@ use SeleniumClient\WebElement;
  */
 class InstallationPage extends AdminPage
 {
-	protected $waitForXpath = "//div[@id='container-installation']";
-	protected $url = 'installation/';
+	protected $waitForXpath = "//div[@id='container-Installation']";
+	protected $url = 'Installation/';
 
 	public function clickNextButton($step)
 	{

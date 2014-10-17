@@ -13,11 +13,11 @@ use SeleniumClient\WebElement;
  */
 class PostinstallPage extends AdminPage
 {
-	protected $waitForXpath = "//h1[contains(.,'Post-installation Messages')]";
+	protected $waitForXpath = "//h1[contains(.,'Post-Installation Messages')]";
 	protected $url = 'administrator/index.php?option=com_postinstall';
 
 	/**
-	 * Clears post-installation messages by navigating to that screen and back
+	 * Clears post-Installation messages by navigating to that screen and back
 *
 	 * @return  null
 	 */

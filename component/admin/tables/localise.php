@@ -112,7 +112,7 @@ class LocaliseTableLocalise extends JTable
 		if (preg_match('/^([^.]*)\..*\.ini$/', $name, $matches) || preg_match('/^([^.]*)\.ini$/', $name, $matches))
 		{
 			$params              = JComponentHelper::getParams('com_localise');
-			$installation_folder = $params->get('installation', 'installation');
+			$installation_folder = $params->get('Installation', 'Installation');
 			$tag                 = $matches[1];
 
 			if (preg_match('#^/(administrator|plugins)#', $relativePath))

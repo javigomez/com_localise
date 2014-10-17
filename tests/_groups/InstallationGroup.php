@@ -27,7 +27,7 @@ class InstallationGroup extends \Codeception\Platform\Group
 	 */
 	public function _before(TestEvent $e)
 	{
-		// Remove Joomla-cms old configuration.php file before do a clean joomla installation
+		// Remove Joomla-cms old configuration.php file before do a clean joomla Installation
 		$joomlaConfigurationFile = 'tests/system/joomla-cms/configuration.php';
 
 		if (file_exists($joomlaConfigurationFile))

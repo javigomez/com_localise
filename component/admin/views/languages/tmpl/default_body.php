@@ -76,7 +76,7 @@ JFactory::getDocument()->addScriptDeclaration("
 			<?php echo JText::_(ucfirst($item->client)); ?>
 		</td>
 		<td class="center">
-			<?php if ($item->tag == $params->get($item->client, 'en-GB') && $item->client != 'installation'): ?>
+			<?php if ($item->tag == $params->get($item->client, 'en-GB') && $item->client != 'Installation'): ?>
 				<i title="<?php echo JText::_('COM_LOCALISE_TOOLTIP_LANGUAGES_DEFAULT');?>"  class="hasTooltip icon-16-default"></i>
 			<?php endif; ?>
 		</td>

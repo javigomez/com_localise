@@ -28,23 +28,23 @@ class UninstallExtensionSteps extends \AcceptanceTester
 	public function uninstallExtension($extensionName)
 	{
 		$I = $this;
-		$I->amOnPage(\ExtensionManagerPage::$URL);
+		$I->amOnPage(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$URL);
 		$I->click("Manage");
-		$I->fillField(\ExtensionManagerPage::$extensionSearch, $extensionName);
-		$I->click(\ExtensionManagerPage::$searchButton);
-		$I->click(\ExtensionManagerPage::$extensionNameLink);
-		$name = $I->grabTextFrom(\ExtensionManagerPage::$extensionTable);
+		$I->fillField(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$extensionSearch, $extensionName);
+		$I->click(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$searchButton);
+		$I->click(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$extensionNameLink);
+		$name = $I->grabTextFrom(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$extensionTable);
 
 		while (strtolower($name) != strtolower($extensionName))
 		{
-			$I->click(\ExtensionManagerPage::$firstCheck);
+			$I->click(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$firstCheck);
 			$I->click("Uninstall");
-			$I->seeElement(\ExtensionManagerPage::$uninstallSuccessMessage);
-			$name = $I->grabTextFrom(\ExtensionManagerPage::$extensionTable);
+			$I->seeElement(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$uninstallSuccessMessage);
+			$name = $I->grabTextFrom(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$extensionTable);
 		}
 
-		$I->click(\ExtensionManagerPage::$firstCheck);
+		$I->click(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$firstCheck);
 		$I->click("Uninstall");
-		$I->seeElement(\ExtensionManagerPage::$uninstallComponentSuccessMessage);
+		$I->seeElement(\joomla3\administrator\isis\extensions\ExtensionManagerPage::$uninstallComponentSuccessMessage);
 	}
 }

@@ -26,7 +26,7 @@ class Com_LocaliseInstallerScript
 	protected $minCmsVersion = '3.3';
 
 	/**
-	 * Function to act prior to installation process begins
+	 * Function to act prior to Installation process begins
 	 *
 	 * @param   string               $type    The action being performed
 	 * @param   JInstallerComponent  $parent  The class calling this method

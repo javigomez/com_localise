@@ -5,17 +5,20 @@
  * @copyright   Copyright (C) 2012 - 2014 All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
+
+namespace Joomla3\Installation;
+
 /**
- * Class InstallJoomla3ManagerPage
+ * Class InstallPage
  *
  * @link   http://codeception.com/docs/07-AdvancedUsage#PageObjects
  *
  * @since  1.0
  */
-class InstallJoomla3ManagerPage
+class InstallPage
 {
 	// Include url of current page
-	public static $URL = '/installation/index.php';
+	public static $URL = '/Installation/index.php';
 
 	public static $installSampleData = "//input[@value='Install Sample Data']";
 
